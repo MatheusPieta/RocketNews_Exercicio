@@ -15,7 +15,7 @@
     font-family: 'League Spartan', sans-serif;
     color: var(--text-color);
     font-style: normal;
-    position: absolute;
+    width: 100vh;
   }
 
   body .backgroud{
@@ -65,26 +65,46 @@
     font-size: 14px;
     line-height: 19px;
     color: var(--text-color);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
+
 
 form{
     color: var(--form-color);
 }
 
-input{
-    position: relative;
-    z-index: 2;
-    width: 750px;
+
+.input-group {
+  padding-top: 10px;
+  z-index: 2;
+  display: flex;
+  position: relative;
+}
+
+.input-group input{
+    flex: 1;
+    width: 700px;
     height: 48px;
+    padding: 2px;
     border: none;
 }
 
-button{
-    position: relative;
-    z-index: 2;
+input::placeholder {
+  padding-left: 10px;
+}
+
+.input-group button{
     background-color: var(--bg-button-color);
-    width: 48px;
-    height: 48px;
+    display: inline-block;
+    width: 50px;
+    height: 52px;
     border: none;
+    cursor: pointer;
+}
+
+ a {
+  font-size: 14;
+  color: var(--bg-button-color);
+  margin-top: 10px;
+  text-decoration: none;
 }
