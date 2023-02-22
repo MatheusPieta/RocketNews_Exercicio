@@ -9,27 +9,19 @@
   *{
     margin: 0;
     padding: 0;
+    position: relative;
   }
   body {
-    background: var(--body-bg-color);
+    background: url(/assets/read_news.jpg), var(--body-bg-color);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right,bottom left;
+    background-size: 50%, 50%;
     font-family: 'League Spartan', sans-serif;
     color: var(--text-color);
     font-style: normal;
-    width: 100vh;
   }
 
-  body .backgroud{
-    right: 0;
-    width: 50%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 1;
-    position: fixed;
-  }
-
-  .logo{
-    position: relative;
-    z-index: 2;
+div .logo{
     width: 389px;
     height: 94px;
     left: 30px;
@@ -37,7 +29,6 @@
   }
 
   .texto {
-    position: relative;
     width: 566px;
     height: 30.44px;
     left: 36px;
@@ -76,14 +67,12 @@ form{
 
 .input-group {
   padding-top: 10px;
-  z-index: 2;
   display: flex;
-  position: relative;
 }
 
 .input-group input{
     flex: 1;
-    width: 700px;
+    width: 600px;
     height: 48px;
     padding: 2px;
     border: none;
